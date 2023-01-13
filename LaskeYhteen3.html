@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+<label id ="otsikko1">Ensinmainen numero:</label>
+<input type="text" id="num1" name="num1" value="0">
+    <br>
+<label id="otsikko2">Toinen numero:</label>
+<input type="text" id="num2" name="num2" value="0">
+    <br>
+<button id="button" onclick="LaskeYhteen()">Laske yhteen</button>
+<label id="tulos">Lukujen summa tulee tähän</label>
+<script>
+function LaskeYhteen(){
+    var numero1 = Number(document.getElementById("num1").value);
+    var numero2 = Number(document.getElementById("num2").value);
+    var summa = numero1 + numero2;
+    document.getElementById("tulos").innerHTML = summa;
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+body{
+    font-family: "Comic Sans MS";
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+table{
+    border: 0;
+    width: 600px;
+}
+th{
+    width: 300px;
+}
+label, input{
+    font-size: 24px;
+}
+button{
+    width: 160px;
+    height: 40px;
+    color: white;
+    font-size: 20px;
+    background-color: blueviolet;
+}
+#tulos{
+    font-size: 30px;
+    background-color: red;
+    color: lightcyan;   
+}
