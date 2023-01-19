@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<html>
+<body>
+<h1>Helsingin Vuotuinen Sademäärä</h1>
+<form name="lasku">
+<input type="button" value="laske" onclick="laske()"><br>
+<input type="text" value="0" name="sade" id="sade">
+<script>
+
+function laske(){
+    var sademaarat = [47.0, 36.6, 34.7, 37.0, 41.9, 47.5, 61.7, 74.8, 65.4, 69.7, 66.1, 54.6]
+    let summa = 0;
+    
+    for (let i = 0; i < sademaarat.length; i++){
+        summa += sademaarat[i];
+    }
+    document.lasku.sade.value = summa;
+    
+
+}
+
+
+</script>
+</form>
+</body>
+</html>

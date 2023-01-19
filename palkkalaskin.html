@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<html>
+<body>
+<h1>Palkka laskin</h1>
+<form name = "laskin">
+brutto: <input type = "text" value="0" id="brutto" name="brutto"><br>
+veroprosentti: <input type = "text" value="0" id="veroprosentti" name="veroprosentti"><br>
+palkka: <input type = "text" value="0" id="palkka" name="palkka"><br>
+<input type="button" value="laske" onclick="laske()"> 
+</form>
+<script>
+
+function laske(){
+    let bpalkka = Number(document.laskin.brutto.value);
+    let vprosnetti = Number(document.laskin.veroprosentti.value);
+    let p = bpalkka * vprosnetti / 100.0;
+    var tyoelake = p * 0.0635;
+    var tyottomyysvak = p * 0.019;
+    let palkka2 = bpalkka - p - tyoelake - tyottomyysvak;
+
+    document.laskin.palkka.value = palkka2;
+
+}
+
+
+</script>
+</body>
+</html>
